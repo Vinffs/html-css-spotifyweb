@@ -272,29 +272,38 @@ a{
 .icon-soundbar.fa-circle-play{
     font-size: 1.8em;
 }
-
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none; 
-    width: 100%;
-    cursor: pointer;
-    outline: none;
-    border-radius: 15px;
-    height: 5px;
-    background: var(--color-light-grey);
+.song-duration{
+    width: 80%;
 }
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none; 
-    height: 15px;
-    width: 15px;
-    background-color: var(--color-dark-grey);
-    border-radius: 50%;
-    border: 1px solid var(--color-light-grey);
- }
-
- .volume-adjust{
+.volume-adjust{
     width: 150px;
-    margin-bottom: 5px;
- }
+}
+input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    width: 100%;
+    background-color:var(--color-white);
+    border-radius: 10px;
+}
+  
+input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: black;
+    margin-top: -2px;
+}
+  
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+    margin-top: -5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--color-grey);
+    box-shadow: -250px 0 0 250px var(--color-grey);
+  }
+  .seconds{
+    font-size: 0.7em;
+  }
