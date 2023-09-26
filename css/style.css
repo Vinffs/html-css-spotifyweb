@@ -78,26 +78,108 @@ main{
     left: 0;
     z-index: 10000;
 }
-li>a{
+li{
     list-style: none;
-    text-decoration: none;
-    color: var(--color-dark-grey);
 }
+a{
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
 /* flex utilities */
 .flex{
     display: flex;
 }
 
-/* backgrounds */
+/* backgrounds and text */
 #side-bar{
     background-color: var(--color-black);
 }
-
 #nav-bar{
     background-color:rgba(00, 00, 00, 0.3) ;
 }
 #play-bar{
     background-color: var(--color-dark-grey);
 }
+.gray-text{
+    color: var(--color-grey);
+}
+.white-text{
+    color:var(--color-white);
+}
+.gray-background{
+    background-color: var(--color-grey);
+}
+.round-border{
+    border-radius: 50%;
+}
+
+/* padding */
+.px-5{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.py-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.px-10{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.px-20{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.p-top-10{
+    padding-top: 10px;
+}
+.p-bottom-10{
+    padding-bottom: 10px;
+}
 
 /* sidebar */
+.playlist-list{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.playlist-list>li{
+    padding-bottom: 10px;
+}
+.create-playlist h3, #side-bar * li, .new-playlist, .username, .install{
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.faplus, .side-icon{
+    margin-right: 5px;
+}
+.fa-plus{
+    background-color: var(--color-grey);
+    color: var(--color-black);
+}
+.logo-container{
+    width: 80%;
+}
+#logo{
+    width: 100%;
+}
+.side-icon{
+    font-size: 1.5em;
+}
+.bottom-side-bar{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+.install-app{
+    border-bottom: 1px solid var(--color-grey);
+}
