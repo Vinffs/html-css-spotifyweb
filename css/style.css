@@ -1,0 +1,84 @@
+/*icons
+
+<i class="fa-solid fa-house"></i> --home
+<i class="fa-solid fa-magnifying-glass"></i> --search-lens
+<i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i> --libraries
+<i class="fa-solid fa-plus"></i> --plus/add
+<i class="fa-regular fa-circle-down"></i> --download-app
+<i class="fa-regular fa-heart"></i> --heart
+<i class="fa-regular fa-folder"></i> --folder
+<i class="fa-solid fa-list"></i> --list
+<i class="fa-solid fa-desktop"></i> --desktop
+<i class="fa-solid fa-volume-high"></i> --volume
+<i class="fa-regular fa-circle-play"></i> --play
+
+*/
+
+/* general */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-dark-color);
+    color: var(--color-white);
+}
+
+:root {
+	--color-dark-color: #141922;
+	--color-dark-grey: #282828;
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+	--color-grey: #717171;
+	--color-light-grey: #C1C1C1;
+	--color-highlight: #ADFF2F;
+}
+
+.debug{
+    border: 1px solid white;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height:calc(100% - 150px);
+}
+#side-bar{
+    width: 250px;
+}
+main{
+    width:calc(100% - 250px);
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+#nav-bar{
+    width:calc(100% - 250px);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    z-index: 10000;
+}
+#content-box{
+    margin-top: 100px;
+    width:100%;
+    height: 100%;
+}
+#play-bar{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* flex utilities */
+.flex{
+    display: flex;
+}

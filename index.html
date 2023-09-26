@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="wrapper debug">
+        <!-- container -->
+        <div class="container flex debug">
+
+            <!-- sidebar -->
+            <div id="side-bar" class="debug">
+                <!-- logo -->
+                <div id="logo">
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                </div>
+
+                <!-- sidebar main actions -->
+                <div class="main-actions">
+                    <ul>
+                        <li><a href="#">
+                                <span class="icon"></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="icon"></span>
+                                <span>Cerca</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <span class="icon"></span>
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- crea la tua playlist -->
+                <div class="create-playlist">
+                    <h3>PLAYLIST</h3>
+                    <div class="create-btn">
+                        <span class="plus-icon"></span>
+                        <span>Crea Playlist</span>
+                    </div>
+                    <ul> <!-- overflow Y auto w/ max-height-->
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+                <!-- calltoaction + utente -->
+                <div class="bottom-side-bar">
+                    <!-- add border bottom  -->
+                    <div class="install-app">
+                        <span class="icon download"></span>
+                        <span>Installa App</span>
+                    </div>
+                    <div class="user">
+                        <span class="user-img"></span>
+                        <span>Vin De Miranda</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- main -->
+            <main>
+                <!-- navbar -->
+                <div id="nav-bar" class="debug">
+                    <div class="call-to-action-btn">
+                        <span>EFFETTUA L'UPGRADE</span>
+                    </div>
+                </div>
+
+                <!-- content-box -->
+                <section id="content-box" class="debug">
+                    <!-- In evidenza/Podcast ecc... -->
+                    <div class="option-list">
+                        <ul>
+                            <li><a href="#">IN EVIDENZA</a></li>
+                            <li><a href="#">PODCAST</a></li>
+                            <li><a href="#">CLASSIFICHE</a></li>
+                            <li><a href="#">GENERI E MOOD</a></li>
+                            <li><a href="#">NUOVE USCITE</a></li>
+                            <li><a href="#">SCOPRI</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- recently played -->
+                    <div class="main-container">
+                        <h2>Recently played</h2>
+                        <!-- card box -->
+                        <div class="card-box">
+                            <!-- 6 cards (later to be flexed) -->
+                            <div class="card">
+                                <div class="card-image"></div>
+                                <div class="card-text"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- created for -->
+                    <div class="main-container">
+                        <h2>Creato per Vin De Miranda</h2>
+                        <p>Pi&ugrave; ascolti, Pi&ugrave; accurati saranno i suggerimenti.</p>
+                        <div class="card-box">
+                            <!-- 2 cards -->
+                            <div class="card">
+                                <div class="card-image"></div>
+                                <div class="card-text"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Famous Artists -->
+                    <div class="main-container">
+                        <h2>Artisti Pi&ugrave; popolari</h2>
+                        <p>Pi&ugrave; ascolti, Pi&ugrave; accurati saranno i suggerimenti.</p>
+                        <div class="card-box">
+                            <!-- 2 cards -->
+                            <div class="card">
+                                <div class="card-image"></div>
+                                <div class="card-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- playbar-->
+        <div id="play-bar" class="debug">
+            <!-- leftside -->
+            <div class="play-bar-left">
+                <div class="song">
+                    <div class="song-img"></div>
+                    <div class="song-title"></div>
+                </div>
+                <div class="action-icon">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- center -->
+            <div class="play-bar-center">
+                <div class="player-actions">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+                <div class="song-duration"></div>
+            </div>
+
+            <!-- rightside -->
+            <div class="play-bar-right">
+                <div class="more-actions">
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                    <div class="icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
