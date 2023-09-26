@@ -64,6 +64,10 @@
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
                 <!-- calltoaction + utente -->
@@ -95,7 +99,7 @@
                 <section id="content-box" class="debug">
                     <!-- In evidenza/Podcast ecc... -->
                     <div class="flex j-center">
-                        <ul class="flex option-list">
+                        <ul class="flex option-list items-center j-center f-wrap">
                             <li><a href="#">IN EVIDENZA</a></li>
                             <li><a href="#">PODCAST</a></li>
                             <li><a href="#">CLASSIFICHE</a></li>
@@ -109,7 +113,7 @@
                     <div class="main-container px-10 py-20">
                         <h2 class="px-20 py-5">Recently played</h2>
                         <!-- card box -->
-                        <div class="card-box px-5 py-10 flex">
+                        <div class="card-box f-wrap px-5 py-10 flex">
                             <!-- 6 cards (later to be flexed) -->
                             <div class="card py-5 px-10">
                                 <div class="card-image">
@@ -235,6 +239,22 @@
                     <div><i class="fa-regular fa-folder px-5 gray-text"></i></div>
                 </div>
             </div>
+            <!-- only seen under 900px -->
+            <div class="play-bar left flex j-center items-center px-5 show-mq-only">
+                <div class="flex">
+                    <div class="song-img">
+                        <img src="img/sinister.jpeg" alt="sinister">
+                    </div>
+                    <div class="song-title flex f-column items-start j-center">
+                        <h3 class="px-5">Sinister</h3>
+                        <Span class="px-5 bold gray-text">Brano Nome</Span>
+                        <div>
+                            <i class="fa-regular fa-heart px-5 gray-text"></i>
+                            <i class="fa-regular fa-folder gray-text"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- center -->
             <div class="play-bar center">
@@ -242,15 +262,15 @@
                     <i class="fa-solid fa-shuffle px-20 icon-soundbar"></i>
                     <i class="fa-solid fa-backward-step px-20 icon-soundbar"></i>
                     <i class="fa-regular fa-circle-play px-20 icon-soundbar"></i>
-                    <i class="fa-solid fa-forward-step px-20 icon-soundbar"></i> 
+                    <i class="fa-solid fa-forward-step px-20 icon-soundbar"></i>
                     <i class="fa-solid fa-rotate-right px-20 icon-soundbar"></i>
                 </div>
                 <div class="music-bar flex j-between content-center items-center">
-                    <div class="seconds">0:25</div>
+                    <div class="seconds px-5">0:25</div>
                     <div class="song-duration">
                         <input type="range">
                     </div>
-                    <div class="seconds">4:35</div>
+                    <div class="seconds px-5">4:35</div>
                 </div>
             </div>
 
@@ -263,6 +283,20 @@
                 </div>
                 <div class="volume-adjust px-5">
                     <input type="range">
+                </div>
+            </div>
+
+            <!-- only seen under 900px -->
+            <div class="show-mq-only play-bar right py-20 flex f-column j-center">
+                <div class="j-center flex py-20">
+                    <i class="fa-solid fa-list px-5 m-bottom-10 "></i>
+                    <i class="fa-solid fa-display px-5 m-bottom-10"></i>
+                </div>
+                <div class="flex items-center j-center">
+                    <i class="fa-solid fa-volume-high px-5 m-bottom-10"></i>
+                    <div class="volume-adjust px-5 flex j-end m-bottom-5">
+                        <input type="range">
+                    </div>
                 </div>
             </div>
         </div>
