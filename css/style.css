@@ -183,3 +183,18 @@ a{
 .install-app{
     border-bottom: 1px solid var(--color-grey);
 }
+
+/* navbar */
+.upgrade-btn{
+    font-size: 0.7em;
+    font-weight: 600;
+    border: 1px solid var(--color-white);
+    border-radius: 20px;
+
+}
+.call-to-action-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+}
+
