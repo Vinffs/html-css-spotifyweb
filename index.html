@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -70,7 +73,8 @@
                         <span class="install">Installa App</span>
                     </div>
                     <div class="user p-top-10">
-                        <span><i class="fa-regular fa-circle-user side-icon white-text gray-background round-border"></i></span>
+                        <span><i
+                                class="fa-regular fa-circle-user side-icon white-text gray-background round-border"></i></span>
                         <span class="username">Vin De Miranda</span>
                     </div>
                 </div>
@@ -82,7 +86,8 @@
                 <!-- navbar -->
                 <div id="nav-bar" class="debug">
                     <div>
-                        <span class="call-to-action-btn flex j-end"><a class="upgrade-btn white-text py-10 px-20 bold" href="">EFFETTUA L'UPGRADE</a></span>
+                        <span class="call-to-action-btn flex j-end"><a class="upgrade-btn white-text py-10 px-20 bold"
+                                href="">EFFETTUA L'UPGRADE</a></span>
                     </div>
                 </div>
 
@@ -213,38 +218,47 @@
         </div>
 
         <!-- playbar-->
-        <div id="play-bar" class="debug">
+        <div id="play-bar" class="debug flex">
             <!-- leftside -->
-            <div class="play-bar-left">
-                <div class="song">
-                    <div class="song-img"></div>
-                    <div class="song-title"></div>
+            <div class="play-bar left flex items-center px-20">
+                <div class="flex">
+                    <div class="song-img">
+                        <img src="img/sinister.jpeg" alt="sinister">
+                    </div>
+                    <div class="song-title flex f-column items-start j-center">
+                        <h3 class="px-10">Sinister</h3>
+                        <Span class="px-10 bold gray-text">Brano Nome</Span>
+                    </div>
                 </div>
-                <div class="action-icon">
-                    <div></div>
-                    <div></div>
+                <div class="action-icon flex items-center">
+                    <div><i class="fa-regular fa-heart px-5 gray-text"></i></div>
+                    <div><i class="fa-regular fa-folder px-5 gray-text"></i></div>
                 </div>
             </div>
 
             <!-- center -->
-            <div class="play-bar-center">
-                <div class="player-actions">
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
+            <div class="play-bar center">
+                <div class="player-actions flex content-center j-center items-center py-20">
+                    <i class="fa-solid fa-shuffle px-20 icon-soundbar"></i>
+                    <i class="fa-solid fa-backward-step px-20 icon-soundbar"></i>
+                    <i class="fa-regular fa-circle-play px-20 icon-soundbar"></i>
+                    <i class="fa-solid fa-forward-step px-20 icon-soundbar"></i> 
+                    <i class="fa-solid fa-rotate-right px-20 icon-soundbar"></i>
                 </div>
-                <div class="song-duration"></div>
+                <div class="song-duration">
+                    <input type="range">
+                </div>
             </div>
 
             <!-- rightside -->
-            <div class="play-bar-right">
+            <div class="play-bar right flex content-center j-end items-center py-20">
                 <div class="more-actions">
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
+                    <i class="fa-solid fa-list px-5"></i>
+                    <i class="fa-solid fa-display px-5"></i>
+                    <i class="fa-solid fa-volume-high px-5"></i>
+                </div>
+                <div class="volume-adjust px-5">
+                    <input type="range">
                 </div>
             </div>
         </div>
