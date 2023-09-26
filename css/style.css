@@ -68,7 +68,6 @@ main{
 #content-box{
     margin-top: 100px;
     width:100%;
-    height: 100%;
 }
 #play-bar{
     width: 100%;
@@ -208,8 +207,14 @@ a{
 }
 
 /* content box */
-
-/* option-list */
+.main-container h2{
+    font-size: 1.4em;
+}
+.main-container p{
+    font-size: 0.7em;
+    color: var(--color-grey);
+    font-weight: 800;
+}
 .option-list *{
     padding: 10px 5px;
     font-size: 0.9em;
@@ -220,7 +225,7 @@ a{
 }
 .card-text h3{
     font-size: 0.8em;
-    padding: 5px;
+    padding: 10px 5px;
     font-weight: 800;
 }
 .card{
@@ -237,4 +242,8 @@ a{
     font-size: 0.7em;
     color: var(--color-grey);
     font-weight: 800;
+}
+.card-image.round img{
+    object-fit: contain;
+    border-radius: 50%;
 }
