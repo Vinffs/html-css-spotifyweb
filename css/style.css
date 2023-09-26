@@ -62,6 +62,11 @@ main{
     left: 0;
     z-index: 10000;
 }
+#side-bar-responsive{
+    width: 50px;
+    overflow: hidden;
+    display: none;
+}
 li{
     list-style: none;
 }
@@ -103,7 +108,7 @@ a{
 }
 
 /* backgrounds and text */
-#side-bar{
+#side-bar, #side-bar-responsive{
     background-color: var(--color-black);
 }
 #nav-bar{
@@ -167,6 +172,12 @@ a{
 }
 .m-bottom-10{
     margin-bottom: 10px;
+}
+.m-left-5{
+    margin-left: 5px;
+}
+.m-left-10{
+    margin-left: 10px;
 }
 
 /* sidebar */
@@ -370,6 +381,25 @@ input[type='range']::-webkit-slider-thumb {
 
 @media screen and (max-height: 690px ){
     .bottom-side-bar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px ){
+    main, #nav-bar{
+        width: calc(100% - 50px);
+    }
+    #nav-bar{
+        top: 0;
+        left: 50px;
+    }
+    .install-app{
+        border: none;
+    }
+    #side-bar-responsive{
+        display: flex;
+    }
+    #side-bar{
         display: none;
     }
 }
