@@ -47,22 +47,22 @@ body{
 }
 .container{
     width: 100%;
-    height:calc(100% - 150px);
+    height:calc(100% - 100px);
 }
 #side-bar{
-    width: 250px;
+    width: 200px;
 }
 main{
-    width:calc(100% - 250px);
-    height: calc(100vh - 150px);
+    width:calc(100% - 200px);
+    height: calc(100vh - 100px);
     overflow-y: auto;
 }
 #nav-bar{
-    width:calc(100% - 250px);
+    width:calc(100% - 200px);
     height: 100px;
     position: fixed;
     top: 0;
-    left: 250px;
+    left: 200px;
     z-index: 1000;
 }
 #content-box{
@@ -72,13 +72,32 @@ main{
 }
 #play-bar{
     width: 100%;
-    height: 150px;
+    height: 100px;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 10000;
 }
+li>a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-dark-grey);
+}
 /* flex utilities */
 .flex{
     display: flex;
 }
+
+/* backgrounds */
+#side-bar{
+    background-color: var(--color-black);
+}
+
+#nav-bar{
+    background-color:rgba(00, 00, 00, 0.3) ;
+}
+#play-bar{
+    background-color: var(--color-dark-grey);
+}
+
+/* sidebar */
