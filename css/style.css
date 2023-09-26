@@ -40,7 +40,7 @@ body{
 
 .debug{
     border: 1px solid white;
-}
+} 
 .wrapper{
     width: 100%;
     height: 100vh;
@@ -90,6 +90,15 @@ a{
 .flex{
     display: flex;
 }
+.j-end{
+    justify-content: flex-end;
+}
+.j-center{
+    justify-content: center;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
 
 /* backgrounds and text */
 #side-bar{
@@ -112,6 +121,9 @@ a{
 }
 .round-border{
     border-radius: 50%;
+}
+.bold{
+    font-weight: 800;
 }
 
 /* padding */
@@ -157,7 +169,7 @@ a{
 }
 .create-playlist h3, #side-bar * li, .new-playlist, .username, .install{
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 800;
 }
 .faplus, .side-icon{
     margin-right: 5px;
@@ -187,14 +199,42 @@ a{
 /* navbar */
 .upgrade-btn{
     font-size: 0.7em;
-    font-weight: 600;
     border: 1px solid var(--color-white);
     border-radius: 20px;
 
 }
 .call-to-action-btn{
-    display: flex;
-    justify-content: flex-end;
     margin: 30px;
 }
 
+/* content box */
+
+/* option-list */
+.option-list *{
+    padding: 10px 5px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.card-text{
+    text-align: center;
+}
+.card-text h3{
+    font-size: 0.8em;
+    padding: 5px;
+    font-weight: 800;
+}
+.card{
+    width: calc(100% / 6);
+
+}
+.card-image{
+    width: 100%;
+}
+.card-image img{
+    width: 100%;
+}
+.sub{
+    font-size: 0.7em;
+    color: var(--color-grey);
+    font-weight: 800;
+}
