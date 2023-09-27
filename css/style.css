@@ -358,10 +358,10 @@ input[type='range']::-webkit-slider-thumb {
 .logo-container:hover{
     filter: invert(70%) sepia(99%) saturate(768%) hue-rotate(79deg) brightness(90%) contrast(86%);
 }
-.call-to-action-btn:hover{
+.upgrade-btn:hover{
     filter: invert(70%) sepia(99%) saturate(768%) hue-rotate(79deg) brightness(90%) contrast(86%);
     transform: scale(1.2);
-    margin-right: 100px;
+    margin-right: 10px;
 }
 
 
