@@ -20,6 +20,8 @@ body{
 	--color-grey: #717171;
 	--color-light-grey: #C1C1C1;
 	--color-highlight: #ADFF2F;
+    --color-green: #1ED760;
+    --filter-green: invert(61%) sepia(100%) saturate(394%) hue-rotate(86deg) brightness(92%) contrast(91%);
 }
 
 /* .debug{
@@ -28,6 +30,7 @@ body{
 .wrapper{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 .container{
     width: 100%;
@@ -35,6 +38,7 @@ body{
 }
 #side-bar{
     width: 200px;
+    min-height: 600px;
     overflow: hidden;
 }
 main{
@@ -182,7 +186,7 @@ a{
 
 /* sidebar */
 .playlist-list{
-    max-height: 250px;
+    max-height: 300px;
     overflow-y: auto;
 }
 
@@ -209,10 +213,11 @@ a{
 .side-icon{
     font-size: 1.5em;
 }
-.bottom-side-bar{
-    position: absolute;
-    bottom: 100px;
-    left: 0;
+.side-top{
+    height: calc(100% - 100px);
+}
+.side-bottom{
+    height: 100px;
 }
 .install-app{
     border-bottom: 1px solid var(--color-grey);
@@ -223,7 +228,7 @@ a{
     font-size: 0.7em;
     border: 1px solid var(--color-white);
     border-radius: 20px;
-
+    transition: all 0.2s;
 }
 .call-to-action-btn{
     margin: 30px;
@@ -271,6 +276,21 @@ a{
     object-fit: contain;
     border-radius: 50%;
 }
+.green-border{
+    background-color: transparent;
+    width: 50px;
+    height: 2px;
+    padding: 0;
+    border-radius: 20px;
+    margin: 5px auto;
+    transition: all 0.2s;
+}
+
+.active .green-border, .option-list li:hover .green-border{
+    background-color: var(--color-green);
+}
+
+
 
 /* playbar */
 .show-mq-only{
@@ -331,9 +351,10 @@ input[type='range']::-webkit-slider-thumb {
     background-color: var(--color-grey);
     box-shadow: -250px 0 0 250px var(--color-white);
   }
-  .seconds{
+
+.seconds{
     font-size: 0.7em;
-  }
+}
 
 /* hover effects */
 .card-image {
@@ -355,24 +376,23 @@ input[type='range']::-webkit-slider-thumb {
     filter: opacity(0.5);
 }
 
-.logo-container:hover{
-    filter: invert(70%) sepia(99%) saturate(768%) hue-rotate(79deg) brightness(90%) contrast(86%);
+#logo:hover{
+    filter: var(--filter-green);
 }
 .upgrade-btn:hover{
-    filter: invert(70%) sepia(99%) saturate(768%) hue-rotate(79deg) brightness(90%) contrast(86%);
+    filter: var(--filter-green);
     transform: scale(1.2);
     margin-right: 10px;
 }
-
+.hover-green:hover{
+    filter: var(--filter-green);
+}
 
 /* media query */
 
 @media screen and (max-width: 1200px){
     .card{
         width: calc(100% / 4);
-    }
-    .card-box{
-        flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 992px){
@@ -407,12 +427,6 @@ input[type='range']::-webkit-slider-thumb {
     }
     .center * i{
         padding: 0 10px;
-    }
-}
-
-@media screen and (max-height: 690px ){
-    .bottom-side-bar{
-        display: none;
     }
 }
 

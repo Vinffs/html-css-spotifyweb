@@ -22,64 +22,67 @@
 
             <!-- sidebar -->
             <div id="side-bar" class="debug">
-                <div class="logo-container px-20 py-20">
-                    <a href="#">
-                        <img id="logo" src="img/logo.svg" alt="spotify-logo">
-                    </a>
-                </div>
-                <div class="main-actions px-20 py-10">
-                    <ul>
-                        <li><a href="#">
-                                <span><i class="fa-solid fa-house side-icon py-5"></i></span>
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <span><i class="fa-solid fa-magnifying-glass side-icon py-5"></i></span>
-                                <span>Cerca</span>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <span><i class="fa-solid fa-lines-leaning fa-flip-horizontal side-icon py-5"></i></span>
-                                <span>La tua libreria</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="create-playlist px-20 py-10">
-                    <h3 class="p-bottom-10">PLAYLIST</h3>
-                    <div class="create-btn">
-                        <span><i class="fa-solid fa-plus py-10 px-10"></i></span>
-                        <span class="gray-text new-playlist">Crea Playlist</span>
+                <div class="side-top">
+                    <div class="logo-container px-20 py-20">
+                        <a href="#">
+                            <img id="logo" src="img/logo.svg" alt="spotify-logo">
+                        </a>
                     </div>
-                    <ul class="playlist-list py-20">
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                        <li><a href="#">Nome Playlist</a></li>
-                    </ul>
-                </div>
-                <div class="bottom-side-bar px-20 py-10">
-                    <div class="install-app py-10 gray-text">
-                        <span><i class="fa-regular fa-circle-down"></i></span>
-                        <span class="install">Installa App</span>
+                    <div class="main-actions px-20 py-10">
+                        <ul>
+                            <li><a href="#" class="hover-green">
+                                    <span><i class="fa-solid fa-house side-icon py-5"></i></span>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li><a href="#" class="hover-green">
+                                    <span><i class="fa-solid fa-magnifying-glass side-icon py-5"></i></span>
+                                    <span>Cerca</span>
+                                </a>
+                            </li>
+                            <li><a href="#" class="hover-green">
+                                    <span><i class="fa-solid fa-lines-leaning fa-flip-horizontal side-icon py-5"></i></span>
+                                    <span>La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="user p-top-10">
-                        <span><i class="fa-regular fa-circle-user side-icon white-text gray-background round-border"></i></span>
-                        <span class="username">Vin De Miranda</span>
+                    <div class="create-playlist px-20 py-10">
+                        <h3 class="p-bottom-10">PLAYLIST</h3>
+                        <div class="create-btn">
+                            <span><i class="fa-solid fa-plus py-10 px-10"></i></span>
+                            <span class="gray-text new-playlist hover-green">Crea Playlist</span>
+                        </div>
+                        <ul class="playlist-list py-20">
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                            <li><a href="#" class="hover-green">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="side-bottom">
+                    <div class="bottom-side-bar px-20 py-10">
+                        <div class="install-app py-10 gray-text">
+                            <span><i class="fa-regular fa-circle-down"></i></span>
+                            <span class="install">Installa App</span>
+                        </div>
+                        <div class="user py-10">
+                            <span><i class="fa-regular fa-circle-user side-icon white-text gray-background round-border"></i></span>
+                            <span class="username">Vin De Miranda</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- only shown below 550px -->
-            <div id="side-bar-responsive" class="debug">
+            <div id="side-bar-responsive" class="debug flex j-between f-column">
                 <!-- logo -->
                 <div class="logo-container flex f-column items-center m-left-5 py-10">
                     <a href="#">
@@ -121,12 +124,30 @@
                     <!-- In evidenza/Podcast ecc... -->
                     <div class="flex j-center">
                         <ul class="flex option-list items-center j-center f-wrap">
-                            <li><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
+                            <li class="active">
+                                <a href="#">IN EVIDENZA</a>
+                                <div class="green-border"></div>
+                            </li>
+                            <li>
+                                <a href="#">PODCAST</a>
+                                <div class="green-border"></div>
+                            </li>
+                            <li>
+                                <a href="#">CLASSIFICHE</a>
+                                <div class="green-border"></div>
+                            </li>
+                            <li>
+                                <a href="#">GENERI E MOOD</a>
+                                <div class="green-border"></div>
+                            </li>
+                            <li>
+                                <a href="#">NUOVE USCITE</a>
+                                <div class="green-border"></div>
+                            </li>
+                            <li>
+                                <a href="#">SCOPRI</a>
+                                <div class="green-border"></div>
+                            </li>
                         </ul>
                     </div>
 
